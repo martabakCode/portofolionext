@@ -22,6 +22,7 @@ export function SiteConfigForm({ initialData }: SiteConfigFormProps) {
         primary_color: initialData?.primary_color || "#4f46e5",
         secondary_color: initialData?.secondary_color || "#ec4899",
         accent_color: initialData?.accent_color || "#10b981",
+        theme_mode: initialData?.theme_mode || "pagi",
     });
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -105,6 +106,19 @@ export function SiteConfigForm({ initialData }: SiteConfigFormProps) {
             {/* Appearance */}
             <div className="space-y-4">
                 <h2 className="text-xl font-semibold text-white border-b border-zinc-800 pb-2">Appearance</h2>
+
+                <div className="mb-4">
+                    <label className="block text-zinc-400 mb-2 text-sm">Theme Mode (Pagi / Sore)</label>
+                    <select
+                        name="theme_mode"
+                        value={formData.theme_mode}
+                        onChange={(e) => handleChange(e as any)}
+                        className="w-full bg-zinc-900 border border-zinc-800 rounded-xl p-3 text-white focus:outline-none focus:ring-2 focus:ring-primary-custom/50"
+                    >
+                        <option value="pagi">Pagi Hari (Light Mode)</option>
+                        <option value="sore">Sore Hari (Dark Mode)</option>
+                    </select>
+                </div>
 
                 <div className="grid md:grid-cols-3 gap-6">
                     <div>

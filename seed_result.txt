@@ -1,4 +1,0 @@
-STATUS=EXISTS
-EMAIL=admin@martabakcode.com
-USER_ID=9a3239b3-494d-4d61-9ee1-81e337cc0015
-CONSTANTS=export const ADMIN_USER_ID = "9a3239b3-494d-4d61-9ee1-81e337cc0015";

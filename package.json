@@ -13,19 +13,18 @@
   "dependencies": {
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.5.0",
-    "@react-three/rapier": "^2.2.0",
+    "@react-three/postprocessing": "^3.0.4",
     "@supabase/ssr": "^0.8.0",
     "@supabase/supabase-js": "^2.96.0",
-    "@types/three": "^0.182.0",
     "@uiw/react-md-editor": "^4.0.11",
     "framer-motion": "^12.34.1",
+    "lucide-react": "^0.575.0",
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "simplex-noise": "^4.0.3",
     "sonner": "^2.0.7",
-    "three": "^0.182.0",
-    "zustand": "^5.0.11"
+    "three": "^0.183.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

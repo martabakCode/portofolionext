@@ -158,6 +158,7 @@ create table if not exists site_config (
   primary_color text default '#4f46e5',
   secondary_color text default '#ec4899',
   accent_color text default '#10b981',
+  theme_mode text default 'pagi',
   created_at timestamptz default now(),
   updated_at timestamptz default now()
 );

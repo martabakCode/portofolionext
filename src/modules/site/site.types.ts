@@ -1,4 +1,3 @@
-
 export interface SiteConfig {
     id: string;
     site_name: string;
@@ -8,6 +7,7 @@ export interface SiteConfig {
     primary_color: string;
     secondary_color: string;
     accent_color: string;
+    theme_mode?: string;
 }
 
 export type UpdateSiteConfigDTO = Partial<Omit<SiteConfig, "id">>;
